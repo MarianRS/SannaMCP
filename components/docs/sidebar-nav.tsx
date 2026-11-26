@@ -9,7 +9,7 @@ export function SidebarNav({ nav, title }: { nav: Content["nav"]; title: string 
   const docRef = useRef<Document | null>(typeof document !== "undefined" ? document : null);
 
   return (
-    <nav aria-label={title} className="sticky top-24 max-h-[calc(100dvh-7rem)] overflow-y-auto pb-8">
+    <nav aria-label={title} className="sticky top-28 max-h-[calc(100dvh-7rem)] overflow-y-auto overscroll-contain pb-8">
       <Scrollspy targetRef={docRef} offset={96} history={false} className="flex flex-col gap-7">
         {nav.map((group) => (
           <div key={group.group}>

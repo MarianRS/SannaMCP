@@ -10,9 +10,9 @@ import en, { CONNECTOR_NAME, MCP_URL } from "./en";
  */
 const no: Content = {
   meta: {
-    title: "Koble Claude til Sanna · Sanna MCP",
+    title: "Sanna MCP · Dokumentasjon",
     description:
-      "Slik kobler du din egen Claude til Sanna: svar regnskapsføreren, still et spørsmål, send kvitteringer og filer, og registrer utlegg.",
+      "Slik kobler du Sanna MCP til AI-assistenten din — i dag Claude — for å svare regnskapsføreren, stille et spørsmål, sende kvitteringer og filer, og registrere utlegg.",
     htmlLang: "nb",
   },
   ui: {
@@ -39,11 +39,16 @@ const no: Content = {
       ],
     },
     {
-      group: "Oppsett",
+      group: "Koble til",
       items: [
-        { id: "connect", label: "Koble til Claude" },
-        { id: "access", label: "Hva Claude får tilgang til" },
-        { id: "examples", label: "Prøv det" },
+        { id: "connect-claude", label: "Claude" },
+      ],
+    },
+    {
+      group: "Bruk",
+      items: [
+        { id: "access", label: "Tilgang og rettigheter" },
+        { id: "examples", label: "Eksempler" },
       ],
     },
     {
@@ -55,11 +60,11 @@ const no: Content = {
     },
   ],
   hero: {
-    eyebrow: "Sanna MCP × Claude",
-    title: ["Bruk Sanna fra ", "din egen Claude", "."],
-    lead: "Koble Sanna til Claude i nettleseren eller i skrivebordsappen. Da kan Claude lese og svare på spørsmål fra regnskapsføreren din, stille et spørsmål, sende kvitteringer og andre filer, og registrere utlegg for deg.",
-    primaryCta: "Koble til Claude",
-    secondaryCta: "Hva Claude får tilgang til",
+    title: ["Bruk Sanna fra ", "AI-assistenten din", "."],
+    lead: "Sanna MCP kobler Sanna-kontoen din til en AI-assistent. Når den er koblet til, kan den lese og svare på spørsmål fra regnskapsføreren din, stille et spørsmål, sende kvitteringer og andre filer, og registrere utlegg for deg.",
+    clientsLabel: "Støttede assistenter",
+    connectLabel: "Sett opp",
+    capabilitiesLabel: "Dette kan du gjøre",
     capabilities: [
       {
         title: "Svar regnskapsføreren",
@@ -93,13 +98,17 @@ const no: Content = {
     },
     companyPlan: {
       title: "Bruker du Claude på en bedriftsplan?",
-      body: "Bare eieren av planen kan legge til en connector. Be eieren legge den til med verdiene i [steg 3](#step-3).",
+      body: "Bare eieren av planen kan legge til en connector. Be eieren legge den til med verdiene i [steg 3](#claude-step-3).",
     },
   },
-  connect: {
-    title: "Koble til Claude",
-    lead: "Legg til Sanna som en egendefinert connector i Claude, logg inn i Sanna og velg hva Claude får gjøre.",
-    steps: [
+  clients: [
+    {
+      id: "claude",
+      name: "Claude",
+      summary: "Nettleser og skrivebordsapp",
+      title: "Koble til Claude",
+      lead: "Legg til Sanna som en egendefinert connector i Claude i nettleseren eller skrivebordsappen, logg inn i Sanna og velg hva Claude får gjøre.",
+      steps: [
       {
         title: "Åpne Claude",
         body: "Åpne Claude i nettleseren eller i skrivebordsappen.",
@@ -116,7 +125,7 @@ const no: Content = {
           { label: "URL", value: MCP_URL },
         ],
         image: {
-          ...en.connect.steps[2].image!,
+          ...en.clients[0].steps[2].image!,
           alt: "Dialogen Add custom connector i Claude, med navnet Sanna MCP og URL-en https://opco.sanna.co/api/mcp fylt inn.",
           caption: "Dialogen Add custom connector i Claude.",
         },
@@ -125,7 +134,7 @@ const no: Content = {
         title: "Behold innstillingene Claude fant",
         body: "Behold verdiene Claude fant: **Sign in now** under Authentication, og **Use Claude's published identity** under OAuth client. Ikke legg til en header. Klikk **Add**.",
         image: {
-          ...en.connect.steps[3].image!,
+          ...en.clients[0].steps[3].image!,
           alt: "Innstillingene for autentisering i Claude, med Sign in now og Use Claude's published identity valgt og merket Detected.",
           caption: "La begge valgene som er merket Detected stå, og ikke legg til headere.",
         },
@@ -156,7 +165,7 @@ const no: Content = {
           },
         ],
         image: {
-          ...en.connect.steps[7].image!,
+          ...en.clients[0].steps[7].image!,
           alt: "Sannas samtykkeside Koble Claude til Sanna, med lese- og skrivetilgang krysset av for alle ressurser og knappen for å godkjenne 10 tilganger.",
           caption: "Sannas samtykkeside, her vist på engelsk.",
         },
@@ -166,9 +175,10 @@ const no: Content = {
         body: "Tilbake i Claude kan du prøve et av [eksemplene](#examples).",
       },
     ],
-  },
+    },
+  ],
   access: {
-    title: "Hva Claude får tilgang til",
+    title: "Tilgang og rettigheter",
     lead: "Claude ber om lese- og skrivetilgang til fem typer ressurser i Sanna — 10 tilganger totalt. Du bestemmer selv hva du godkjenner på samtykkesiden.",
     resources: ["Organisasjoner", "Personer med tilgang", "Saker", "Filer", "Utlegg"],
     total: "10 av 10 tilganger valgt",
@@ -187,8 +197,8 @@ const no: Content = {
     note: "På samtykkesiden kan du også velge ressurs for ressurs. Du handler som medlem, i dine organisasjoner.",
   },
   examples: {
-    title: "Prøv det",
-    lead: "Tilbake i Claude kan du for eksempel prøve:",
+    title: "Eksempler",
+    lead: "Når du er koblet til, kan du for eksempel prøve:",
     prompts: [
       { prompt: "Har regnskapsføreren min noen spørsmål til meg?" },
       { prompt: "Send denne kvitteringen til Sanna", hint: "Legg ved en kvittering først." },
@@ -201,7 +211,7 @@ const no: Content = {
       {
         problem: "**Add custom connector** er grået ut",
         solution:
-          "Claude-kontoen din hører til en bedriftsplan, og bare eieren av planen kan legge til en connector. Be eieren legge den til med verdiene i [steg 3](#step-3).",
+          "Claude-kontoen din hører til en bedriftsplan, og bare eieren av planen kan legge til en connector. Be eieren legge den til med verdiene i [steg 3](#claude-step-3).",
       },
       {
         problem: "Siden sier **Kontoen … er ikke medlem av noen organisasjon**",

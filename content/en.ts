@@ -5,9 +5,9 @@ export const CONNECTOR_NAME = "Sanna MCP";
 
 const en: Content = {
   meta: {
-    title: "Connect Claude to Sanna · Sanna MCP",
+    title: "Sanna MCP · Docs",
     description:
-      "How Sanna customers connect their own Claude to Sanna: answer your accountant, ask a question, send receipts and files, and register expenses.",
+      "How Sanna customers connect Sanna MCP to their AI assistant — today Claude — to answer their accountant, ask a question, send receipts and files, and register expenses.",
     htmlLang: "en",
   },
   ui: {
@@ -34,11 +34,16 @@ const en: Content = {
       ],
     },
     {
-      group: "Setup",
+      group: "Connect",
       items: [
-        { id: "connect", label: "Connect to Claude" },
-        { id: "access", label: "What Claude can access" },
-        { id: "examples", label: "Try it" },
+        { id: "connect-claude", label: "Claude" },
+      ],
+    },
+    {
+      group: "Use",
+      items: [
+        { id: "access", label: "Access and permissions" },
+        { id: "examples", label: "Example prompts" },
       ],
     },
     {
@@ -50,11 +55,11 @@ const en: Content = {
     },
   ],
   hero: {
-    eyebrow: "Sanna MCP × Claude",
-    title: ["Use Sanna from ", "your own Claude", "."],
-    lead: "Connect Sanna to Claude in the browser or the desktop app. Then Claude can read and answer questions from your accountant, ask a question, send receipts and other files, and register expenses for you.",
-    primaryCta: "Connect to Claude",
-    secondaryCta: "What Claude can access",
+    title: ["Use Sanna from ", "your AI assistant", "."],
+    lead: "Sanna MCP connects your Sanna account to an AI assistant. Once connected, it can read and answer questions from your accountant, ask a question, send receipts and other files, and register expenses for you.",
+    clientsLabel: "Supported assistants",
+    connectLabel: "Set up",
+    capabilitiesLabel: "What you can do",
     capabilities: [
       {
         title: "Answer your accountant",
@@ -88,13 +93,17 @@ const en: Content = {
     },
     companyPlan: {
       title: "Claude on a company plan?",
-      body: "Only the owner of the plan can add a connector. Ask the owner to add it with the values in [step 3](#step-3).",
+      body: "Only the owner of the plan can add a connector. Ask the owner to add it with the values in [step 3](#claude-step-3).",
     },
   },
-  connect: {
-    title: "Connect to Claude",
-    lead: "Add Sanna as a custom connector in Claude, then log in to Sanna and choose what Claude may do.",
-    steps: [
+  clients: [
+    {
+      id: "claude",
+      name: "Claude",
+      summary: "Browser and desktop app",
+      title: "Connect Claude",
+      lead: "Add Sanna as a custom connector in Claude in the browser or the desktop app, then log in to Sanna and choose what Claude may do.",
+      steps: [
       {
         title: "Open Claude",
         body: "Open Claude in the browser or in the desktop app.",
@@ -167,9 +176,10 @@ const en: Content = {
         body: "Back in Claude, try one of the [examples](#examples).",
       },
     ],
-  },
+    },
+  ],
   access: {
-    title: "What Claude can access",
+    title: "Access and permissions",
     lead: "Claude asks for read and write access to five kinds of resources in Sanna — 10 accesses in all. You decide what to approve on the consent page.",
     resources: ["Organizations", "People with access", "Cases", "Files", "Expenses"],
     total: "10 of 10 accesses chosen",
@@ -188,8 +198,8 @@ const en: Content = {
     note: "The consent page also lets you choose resource by resource. You act as a member, in your organizations.",
   },
   examples: {
-    title: "Try it",
-    lead: "Back in Claude, try for example:",
+    title: "Example prompts",
+    lead: "Once connected, try for example:",
     prompts: [
       { prompt: "Does my accountant have any questions for me?" },
       { prompt: "Send this receipt to Sanna", hint: "Attach a receipt first." },
@@ -202,7 +212,7 @@ const en: Content = {
       {
         problem: "**Add custom connector** is greyed out",
         solution:
-          "Your Claude account belongs to a company plan, and only the owner of that plan can add a connector. Ask the owner to add it with the values in [step 3](#step-3).",
+          "Your Claude account belongs to a company plan, and only the owner of that plan can add a connector. Ask the owner to add it with the values in [step 3](#claude-step-3).",
       },
       {
         problem: "The page says **Kontoen … er ikke medlem av noen organisasjon**",

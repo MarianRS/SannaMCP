@@ -3,7 +3,7 @@ import no from "./no";
 import type { Content, Locale } from "./types";
 
 export { locales } from "./types";
-export type { Content, Locale, SectionId, Step } from "./types";
+export type { Client, Content, Locale, SectionId, Step } from "./types";
 
 const dictionaries: Record<Locale, Content> = { en, no };
 

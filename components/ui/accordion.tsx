@@ -32,7 +32,7 @@ function AccordionTrigger({
       <AccordionPrimitive.Trigger
         data-slot="accordion-trigger"
         className={cn(
-          "group/accordion-trigger relative flex flex-1 items-start justify-between rounded-lg border border-transparent py-2.5 text-left text-sm font-medium transition-all outline-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 focus-visible:after:border-ring aria-disabled:pointer-events-none aria-disabled:opacity-50",
+          "group/accordion-trigger relative flex flex-1 items-start justify-between rounded-lg border border-transparent py-2.5 text-start text-sm font-medium transition-all outline-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 focus-visible:after:border-ring aria-disabled:pointer-events-none aria-disabled:opacity-50",
           className
         )}
         {...props}
@@ -41,9 +41,9 @@ function AccordionTrigger({
         <span
           data-slot="accordion-trigger-icon"
           aria-hidden
-          className="pointer-events-none ml-4 grid size-6 shrink-0 place-items-center rounded-md border border-border bg-white text-ink-strong transition-colors duration-200 group-aria-expanded/accordion-trigger:bg-ink-strong group-aria-expanded/accordion-trigger:text-white"
+          className="pointer-events-none ms-4 grid size-6 shrink-0 place-items-center rounded-md border border-border bg-white text-ink-strong transition-colors duration-200 group-aria-expanded/accordion-trigger:bg-ink-strong group-aria-expanded/accordion-trigger:text-white"
         >
-          <PlusIcon className="size-3.5 transition-transform duration-200 ease-out group-aria-expanded/accordion-trigger:rotate-45" />
+          <PlusIcon absoluteStrokeWidth strokeWidth={2} className="size-3.5 transition-transform duration-200 ease-out group-aria-expanded/accordion-trigger:rotate-45" />
         </span>
       </AccordionPrimitive.Trigger>
     </AccordionPrimitive.Header>

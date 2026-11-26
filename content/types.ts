@@ -14,14 +14,29 @@ export type Locale = "no" | "en";
 
 export const locales: Locale[] = ["no", "en"];
 
+/** Section anchors. Each AI client gets its own `connect-<client id>` section. */
 export type SectionId =
   | "introduction"
   | "before-you-start"
-  | "connect"
+  | `connect-${string}`
   | "access"
   | "examples"
   | "troubleshooting"
   | "remove-access";
+
+/**
+ * One AI client Sanna MCP can be connected to. Adding a client (another AI
+ * assistant) means adding an entry to `clients` — nav and sections follow.
+ */
+export type Client = {
+  id: string;
+  name: string;
+  /** Where the client runs, shown on the hero card. */
+  summary: string;
+  title: string;
+  lead: string;
+  steps: Step[];
+};
 
 export type Step = {
   title: string;
@@ -50,11 +65,11 @@ export type Content = {
   };
   nav: { group: string; items: { id: SectionId; label: string }[] }[];
   hero: {
-    eyebrow: string;
     title: [string, string, string]; // before, highlight, after
     lead: string;
-    primaryCta: string;
-    secondaryCta: string;
+    clientsLabel: string;
+    connectLabel: string;
+    capabilitiesLabel: string;
     capabilities: { title: string; body: string }[];
   };
   before: {
@@ -64,7 +79,7 @@ export type Content = {
     holdco: { title: string; body: string };
     companyPlan: { title: string; body: string };
   };
-  connect: { title: string; lead: string; steps: Step[] };
+  clients: Client[];
   access: {
     title: string;
     lead: string;

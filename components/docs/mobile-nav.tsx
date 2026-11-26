@@ -19,10 +19,10 @@ export function MobileNav({ nav, ui }: { nav: Content["nav"]; ui: Content["ui"] 
           />
         }
       >
-        <MenuIcon aria-hidden className="size-4" />
+        <MenuIcon aria-hidden className="size-4" absoluteStrokeWidth strokeWidth={2} />
         {ui.menu}
       </SheetTrigger>
-      <SheetContent side="right" className="w-[min(20rem,85vw)] bg-background p-6 pt-14">
+      <SheetContent side="right" className="w-[min(20rem,85vw)] overflow-y-auto overscroll-contain bg-background p-6 pt-14">
         <SheetTitle className="sr-only">{ui.onThisPage}</SheetTitle>
         <nav aria-label={ui.onThisPage} className="flex flex-col gap-6">
           {nav.map((group) => (
