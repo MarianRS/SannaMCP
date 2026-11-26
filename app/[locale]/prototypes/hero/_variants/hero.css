@@ -1,0 +1,188 @@
+/* PROTOTYPE: hero image variants. Delete with the prototypes/hero folder. */
+
+/* The render's halftone edge is pure white; multiply melts it into the cream page.
+   Every wrapper that may become a stacking context gets the page color behind it,
+   so the blend still has paper to land on when transforms isolate the group. */
+.hero-img {
+  mix-blend-mode: multiply;
+  /* The render's "white" is a warm off-white, so also feather the outer edge: no rectangle seam. */
+  -webkit-mask-image:
+    linear-gradient(to right, transparent, #000 9%, #000 91%, transparent),
+    linear-gradient(to bottom, transparent, #000 9%, #000 91%, transparent);
+  -webkit-mask-composite: source-in;
+  mask-image:
+    linear-gradient(to right, transparent, #000 9%, #000 91%, transparent),
+    linear-gradient(to bottom, transparent, #000 9%, #000 91%, transparent);
+  mask-composite: intersect;
+}
+.hero-paper { background: var(--background); }
+
+/* ---------- 1. Stage ---------- */
+.stage-text {
+  animation: hero-rise 600ms cubic-bezier(0.23, 1, 0.32, 1) both;
+}
+.stage-scene {
+  transform-origin: 50% 40%;
+  animation: stage-settle 1000ms cubic-bezier(0.23, 1, 0.32, 1) 60ms both;
+}
+@keyframes hero-rise {
+  from { opacity: 0; transform: translateY(8px); }
+}
+@keyframes stage-settle {
+  from { opacity: 0; transform: scale(1.04); }
+}
+
+/* ---------- 3. Switch on ---------- */
+.switch-img {
+  animation: switch-warm 1200ms cubic-bezier(0.23, 1, 0.32, 1) 100ms both;
+}
+@keyframes switch-warm {
+  from { filter: saturate(0.45) brightness(0.95); }
+}
+.switch-glow,
+.switch-ring {
+  position: absolute;
+  left: var(--port-x);
+  top: var(--port-y);
+  translate: -50% -50%;
+  border-radius: 50%;
+  pointer-events: none;
+}
+.switch-glow {
+  width: 24%;
+  aspect-ratio: 1;
+  mix-blend-mode: screen;
+  opacity: 0;
+  animation: switch-flare 1400ms cubic-bezier(0.23, 1, 0.32, 1) 700ms both;
+}
+.switch-glow::before,
+.switch-glow-hover {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: radial-gradient(closest-side, rgb(255 150 60 / 0.6), rgb(255 90 0 / 0.2) 55%, transparent);
+}
+/* Ambient breathing after the flare; a slow loop, so a symmetric curve. */
+.switch-glow::before {
+  animation: switch-breathe 3200ms ease-in-out 2100ms infinite alternate;
+}
+.switch-glow-hover {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 200ms ease-out, transform 200ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+@media (hover: hover) and (pointer: fine) {
+  .switch:has(.hero-cta:hover) .switch-glow-hover { opacity: 1; transform: scale(1.15); }
+}
+.switch:has(.hero-cta:focus-visible) .switch-glow-hover { opacity: 1; transform: scale(1.15); }
+
+@keyframes switch-flare {
+  0% { opacity: 0; }
+  35% { opacity: 1; }
+  100% { opacity: 0.75; }
+}
+@keyframes switch-breathe {
+  from { opacity: 1; }
+  to { opacity: 0.6; }
+}
+.switch-ring {
+  width: 7%;
+  aspect-ratio: 1;
+  border: 1.5px solid rgb(255 90 0 / 0.55);
+  opacity: 0;
+  animation: switch-ring 1300ms cubic-bezier(0.23, 1, 0.32, 1) 950ms both;
+}
+.switch-ring-2 { animation-delay: 1200ms; }
+@keyframes switch-ring {
+  from { opacity: 0.9; transform: scale(0.4); }
+  to { opacity: 0; transform: scale(3.2); }
+}
+.switch-text {
+  animation: hero-rise 600ms cubic-bezier(0.23, 1, 0.32, 1) 300ms both;
+}
+
+/* ---------- 4. Dolly in ---------- */
+.dolly-frame { display: flex; flex-direction: column; }
+.dolly-stage { padding: 0 16px; }
+.dolly-scene { position: relative; max-width: 1120px; margin: 8px auto 0; }
+.dolly-chip { display: none; }
+
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .dolly {
+      height: 260svh;
+      view-timeline: --dolly block;
+    }
+    .dolly-frame {
+      position: sticky;
+      top: 4rem;
+      height: calc(100svh - 4rem);
+      overflow: clip;
+    }
+    .dolly-stage {
+      flex: 1;
+      min-height: 0;
+      container-type: size;
+      display: grid;
+      place-items: center;
+    }
+    .dolly-scene {
+      width: min(100cqw, 100cqh * 2102 / 1266);
+      margin: 0;
+      transform-origin: var(--port-x) var(--port-y);
+      animation: dolly-zoom linear both;
+      animation-timeline: --dolly;
+      animation-range: contain 0% contain 60%;
+    }
+    .dolly-text {
+      animation: dolly-text linear both;
+      animation-timeline: --dolly;
+      animation-range: contain 0% contain 28%;
+    }
+    /* Lives inside the scaled scene, so it counter-scales to stay at 1x on screen. */
+    .dolly-chip {
+      position: absolute;
+      left: var(--port-x);
+      top: var(--port-y);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      height: 26px;
+      padding: 0 10px;
+      border-radius: 999px;
+      background: var(--surface);
+      box-shadow: var(--shadow-border);
+      font-size: 12px;
+      font-weight: 500;
+      white-space: nowrap;
+      color: var(--ink-strong);
+      transform-origin: 50% 100%;
+      animation: dolly-chip linear both;
+      animation-timeline: --dolly;
+      animation-range: contain 62% contain 78%;
+    }
+  }
+}
+@keyframes dolly-zoom {
+  to { transform: translateY(-10cqh) scale(2.4); }
+}
+@keyframes dolly-text {
+  to { opacity: 0; transform: translateY(-24px); }
+}
+@keyframes dolly-chip {
+  from { opacity: 0; transform: translate(-50%, calc(-100% - 10px)) scale(calc(0.9 / 2.4)); }
+  to { opacity: 1; transform: translate(-50%, calc(-100% - 16px)) scale(calc(1 / 2.4)); }
+}
+
+/* ---------- Reduced motion: final states, no movement ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .stage-text,
+  .stage-scene,
+  .switch-img,
+  .switch-text,
+  .switch-glow::before { animation: none; }
+  .switch-glow { animation: none; opacity: 0.75; }
+  .switch-ring { display: none; }
+  .switch-glow-hover { transition: opacity 200ms ease-out; transform: none; }
+}

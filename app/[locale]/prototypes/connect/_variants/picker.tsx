@@ -4,7 +4,7 @@ import { Fragment, useCallback, useEffect, useLayoutEffect, useRef, useState, ty
 import "./picker.css";
 
 /** Prototype picker (PICKER.md behavior contract), React edition. */
-export function Picker({ names, variants }: { names: string[]; variants: ReactNode[] }) {
+export function Picker({ names, variants, replay = false }: { names: string[]; variants: ReactNode[]; replay?: boolean }) {
   const [current, setCurrent] = useState(0);
   const [mountKey, setMountKey] = useState(0);
   const navRef = useRef<HTMLElement>(null);
@@ -53,10 +53,11 @@ export function Picker({ names, variants }: { names: string[]; variants: ReactNo
       if (num >= 1 && num <= variants.length) setActive(num - 1);
       else if (e.key === "ArrowRight") setActive((current + 1) % variants.length);
       else if (e.key === "ArrowLeft") setActive((current - 1 + variants.length) % variants.length);
+      else if (replay && (e.key === "r" || e.key === "R")) setMountKey((k) => k + 1);
     }
     document.addEventListener("keydown", onKey);
     return () => document.removeEventListener("keydown", onKey);
-  }, [current, setActive, variants.length]);
+  }, [current, replay, setActive, variants.length]);
 
   return (
     <>
@@ -77,6 +78,18 @@ export function Picker({ names, variants }: { names: string[]; variants: ReactNo
             {name}
           </button>
         ))}
+        {replay && (
+          <>
+            <span className="proto-picker-divider" aria-hidden="true" />
+            <button
+              className="proto-picker-item proto-picker-replay"
+              aria-label="Replay animation (R)"
+              onClick={() => setMountKey((k) => k + 1)}
+            >
+              ↻
+            </button>
+          </>
+        )}
       </nav>
     </>
   );
