@@ -1,0 +1,246 @@
+{
+  "metadata": {
+    "ogLocale": "nb_NO",
+    "twitter:title": "Effektivt regnskap og personlig oppfølging, til fastpris",
+    "next-size-adjust": "",
+    "language": "nb",
+    "og:description": "Et moderne regnskapsfirma med din egen regnskapsfører, teknologi som gjør hverdagen enklere og én fast månedspris.",
+    "og:image:height": "630",
+    "viewport": "width=device-width, initial-scale=1",
+    "og:image:width": "1200",
+    "ogImage": "https://www.sanna.no/og.jpg",
+    "og:locale": "nb_NO",
+    "og:site_name": "Sanna",
+    "twitter:description": "Et moderne regnskapsfirma med din egen regnskapsfører, teknologi som gjør hverdagen enklere og én fast månedspris.",
+    "og:image": "https://www.sanna.no/og.jpg",
+    "ogTitle": "Effektivt regnskap og personlig oppfølging, til fastpris",
+    "ogDescription": "Et moderne regnskapsfirma med din egen regnskapsfører, teknologi som gjør hverdagen enklere og én fast månedspris.",
+    "title": "Sanna | Enklere regnskap",
+    "og:title": "Effektivt regnskap og personlig oppfølging, til fastpris",
+    "ogSiteName": "Sanna",
+    "og:type": "website",
+    "twitter:card": "summary_large_image",
+    "twitter:image": "https://www.sanna.no/og.jpg",
+    "robots": "max-image-preview:large",
+    "description": "Et moderne regnskapsfirma med din egen regnskapsfører, teknologi som gjør hverdagen enklere og én fast månedspris.",
+    "favicon": "https://www.sanna.no/icon-light.png",
+    "scrapeId": "01a217ef-a8cb-7559-8729-8e563622f073",
+    "sourceURL": "https://sanna.no",
+    "url": "https://www.sanna.no/",
+    "statusCode": 200,
+    "contentType": "text/html; charset=utf-8",
+    "timezone": "America/New_York",
+    "proxyUsed": "basic",
+    "indexId": "2cace663-a889-478e-9984-83e0ff6faa3a",
+    "creditsUsed": 1,
+    "concurrencyLimited": false
+  },
+  "images": [
+    "https://www.sanna.no/media/press-tb.svg",
+    "https://www.sanna.no/opco/flate/logos/systems/tripletex.svg",
+    "https://www.sanna.no/opco/flate/qsw-engevik.webp",
+    "https://www.sanna.no/opco/flate/pillars-2.webp",
+    "https://www.sanna.no/media/press-abc.svg",
+    "https://www.sanna.no/media/press-digitalnorway.svg",
+    "https://www.sanna.no/opco/flate/qsw-kjetil.webp",
+    "https://www.sanna.no/opco/flate/panel-green.webp",
+    "https://www.sanna.no/opco/flate/logos/customers/saro.png",
+    "https://www.sanna.no/media/press-fb.svg",
+    "https://www.sanna.no/opco/flate/scene-horizon-b-phone.webp",
+    "https://www.sanna.no/opco/flate/scene-horizon-b.webp",
+    "https://www.sanna.no/opco/team/martin.webp",
+    "https://www.sanna.no/opco/foto/dsc04348-level.webp",
+    "https://www.sanna.no/opco/team/aurora.webp",
+    "https://www.sanna.no/opco/flate/qs-mats.webp",
+    "https://www.sanna.no/media/press-shifter.svg",
+    "https://www.sanna.no/media/press-sorporten.png",
+    "https://www.sanna.no/opco/flate/inset-0.webp",
+    "https://www.sanna.no/opco/flate/qsw-mats.webp",
+    "https://www.sanna.no/opco/flate/logos/customers/heist.svg",
+    "https://www.sanna.no/opco/flate/qsw-schirmer.webp",
+    "https://www.sanna.no/opco/team/truls.webp",
+    "https://www.sanna.no/media/press-adressa.svg",
+    "https://www.sanna.no/opco/flate/logos/systems/poweroffice.svg",
+    "https://www.sanna.no/opco/team/petter.webp",
+    "https://www.sanna.no/media/press-mossavis.svg",
+    "https://www.sanna.no/opco/team/tobias.webp",
+    "https://www.sanna.no/opco/flate/frame-3.webp",
+    "https://www.sanna.no/opco/foto/dsc04247.webp",
+    "https://www.sanna.no/opco/flate/qs-schirmer.webp",
+    "https://www.sanna.no/opco/flate/qs-karen.webp",
+    "https://www.sanna.no/opco/flate/inset-1.webp",
+    "https://www.sanna.no/media/press-dagbladet.svg",
+    "https://www.sanna.no/opco/flate/frame-1.webp",
+    "https://www.sanna.no/media/jRoIadXuXeFpcKVSUBQtfSxZUo.png",
+    "https://www.sanna.no/media/press-spotify.svg",
+    "https://www.sanna.no/media/press-okonomi24.svg",
+    "https://www.sanna.no/opco/flate/inset-2.webp",
+    "https://www.sanna.no/opco/flate/pillars-1.webp",
+    "https://www.sanna.no/opco/foto/dsc04291.webp",
+    "https://www.sanna.no/opco/flate/qs-mathias.webp",
+    "https://www.sanna.no/opco/flate/frame-1-soft.webp",
+    "https://www.sanna.no/opco/flate/qs-peder.webp",
+    "https://www.sanna.no/opco/foto/dsc04440.webp",
+    "https://www.sanna.no/media/press-oblad.svg",
+    "https://www.sanna.no/opco/flate/pillars-0.webp",
+    "https://www.sanna.no/opco/flate/qs-engevik.webp",
+    "https://www.sanna.no/opco/team/konstantin.webp",
+    "https://www.sanna.no/opco/team/hallvard.webp",
+    "https://www.sanna.no/opco/flate/logos/kvist.svg",
+    "https://www.sanna.no/media/press-frifagbevegelse.png",
+    "https://www.sanna.no/opco/flate/scene-horizon-b-tablet.webp",
+    "https://www.sanna.no/media/press-dn.svg",
+    "https://www.sanna.no/opco/flate/qs-kjetil.webp",
+    "https://www.sanna.no/opco/team/patricia.webp",
+    "https://www.sanna.no/opco/foto/dsc04234.webp",
+    "https://www.sanna.no/opco/flate/frame-2.webp",
+    "https://www.sanna.no/opco/flate/panel-sand.webp",
+    "https://www.sanna.no/opco/flate/logos/customers/stoud.svg",
+    "https://www.sanna.no/opco/flate/qsw-mathias.webp",
+    "https://www.sanna.no/media/press-byggfakta.svg",
+    "https://www.sanna.no/media/qRyqV9SoTRMPMw3ToH4mF7NSE0.png",
+    "https://www.sanna.no/opco/flate/panel-meadow-soft.webp",
+    "https://www.sanna.no/opco/foto/dsc04478.webp",
+    "https://www.sanna.no/opco/team/andrea.webp",
+    "https://www.sanna.no/opco/flate/pillars-2-soft.webp",
+    "https://www.sanna.no/opco/flate/panel-peach.webp",
+    "https://www.sanna.no/opco/flate/logos/customers/feelm.svg",
+    "https://www.sanna.no/media/press-nrk.svg",
+    "https://www.sanna.no/opco/team/camilla.webp",
+    "https://www.sanna.no/opco/flate/logos/customers/youwell.png",
+    "https://www.sanna.no/opco/team/tom.webp",
+    "https://www.sanna.no/opco/flate/qsw-karen.webp",
+    "https://www.sanna.no/opco/foto/dscf3314.webp",
+    "https://www.sanna.no/opco/flate/frame-0.webp",
+    "https://www.sanna.no/opco/team/hege.webp",
+    "https://www.sanna.no/opco/flate/qsw-peder.webp",
+    "https://www.sanna.no/opco/foto/dsc05494.webp",
+    "https://www.sanna.no/opco/flate/logos/systems/xledger.svg",
+    "https://www.sanna.no/opco/flate/logos/customers/audun.svg",
+    "https://www.sanna.no/opco/flate/logos/sensorita.svg",
+    "https://www.sanna.no/media/press-amta.svg",
+    "https://www.sanna.no/media/press-vg.svg",
+    "https://www.sanna.no/opco/flate/frame-2-soft.webp",
+    "https://www.sanna.no/opco/flate/logos/systems/finago.png",
+    "https://www.sanna.no/opco/flate/scene-horizon-b-wide.webp",
+    "https://www.sanna.no/opco/flate/inset-3.webp",
+    "https://www.sanna.no/opco/foto/dsc04389.webp"
+  ],
+  "branding": {
+    "colorScheme": "light",
+    "fonts": [
+      {
+        "family": "Geist",
+        "role": "body"
+      },
+      {
+        "family": "Geist Serif",
+        "role": "heading"
+      }
+    ],
+    "colors": {
+      "primary": "#DED6C9",
+      "secondary": "#1B0C01",
+      "accent": "#9EAB29",
+      "background": "#FCFAF4",
+      "textPrimary": "#2F1602",
+      "link": "#9EAB29"
+    },
+    "typography": {
+      "fontFamilies": {
+        "primary": "Geist",
+        "heading": "Geist Serif"
+      },
+      "fontStacks": {
+        "heading": [
+          "Geist",
+          "Times New Roman",
+          "Times",
+          "serif"
+        ],
+        "body": [
+          "ui-sans-serif",
+          "system-ui",
+          "sans-serif"
+        ],
+        "paragraph": [
+          "Geist",
+          "ui-sans-serif",
+          "system-ui",
+          "sans-serif"
+        ]
+      },
+      "fontSizes": {
+        "h1": "52px",
+        "h2": "44px",
+        "body": "12.5px"
+      }
+    },
+    "spacing": {
+      "baseUnit": 4,
+      "borderRadius": "8px"
+    },
+    "components": {
+      "input": {
+        "background": "#F6F1E8",
+        "textColor": "#2F1602",
+        "borderColor": null,
+        "borderRadius": "8px",
+        "borderRadiusCorners": {
+          "topLeft": "8px",
+          "topRight": "8px",
+          "bottomRight": "8px",
+          "bottomLeft": "8px"
+        },
+        "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0) 0px 0px 0px 0px"
+      },
+      "buttonPrimary": {
+        "background": "#1B0C01",
+        "textColor": "#FFFFFF",
+        "borderRadius": "8px",
+        "borderRadiusCorners": {
+          "topLeft": "8px",
+          "topRight": "8px",
+          "bottomRight": "8px",
+          "bottomLeft": "8px"
+        },
+        "shadow": "none"
+      },
+      "buttonSecondary": {
+        "background": "#DED6C9",
+        "textColor": "#2F1602",
+        "borderRadius": "8px",
+        "borderRadiusCorners": {
+          "topLeft": "8px",
+          "topRight": "8px",
+          "bottomRight": "8px",
+          "bottomLeft": "8px"
+        },
+        "shadow": "none"
+      }
+    },
+    "images": {
+      "logo": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2270%22%20height%3D%2212%22%20viewBox%3D%220%200%2069.998%2012.013%22%20aria-label%3D%22Sanna%22%20data-fc-idx%3D%220%22%3E%3Cpath%20fill%3D%22currentColor%22%20d%3D%22M%2051.551%208.329%20L%2051.551%200.246%20L%2054.501%200.246%20L%2054.501%2011.767%20L%2050.676%2011.767%20L%2044.777%203.482%20L%2044.777%2011.767%20L%2041.827%2011.767%20L%2041.827%200.246%20L%2045.775%200.246%20L%2051.551%208.329%20Z%20M%2036.853%208.331%20L%2036.853%200.246%20L%2039.802%200.246%20L%2039.802%2011.767%20L%2035.977%2011.767%20L%2030.078%203.482%20L%2030.078%2011.767%20L%2027.129%2011.767%20L%2027.129%200.246%20L%2031.077%200.246%20L%2036.853%208.331%20Z%20M%2026.158%2011.767%20L%2022.917%2011.767%20L%2021.924%209.494%20L%2015.861%209.494%20L%2014.868%2011.767%20L%2011.626%2011.767%20L%2016.895%200.246%20L%2020.874%200.246%20L%2026.158%2011.767%20Z%20M%2069.998%2011.767%20L%2066.756%2011.767%20L%2065.763%209.494%20L%2059.7%209.494%20L%2058.707%2011.767%20L%2055.465%2011.767%20L%2060.735%200.246%20L%2064.713%200.246%20L%2069.998%2011.767%20Z%20M%203.103%207.988%20C%203.154%208.326%203.303%208.623%203.549%208.879%20C%203.804%209.125%204.148%209.314%204.578%209.448%20C%205.008%209.581%205.515%209.647%206.099%209.647%20C%206.908%209.647%207.548%209.54%208.019%209.325%20C%208.49%209.11%208.726%208.797%208.726%208.388%20C%208.726%208.08%208.587%207.839%208.311%207.666%20C%208.044%207.491%207.538%207.363%206.79%207.282%20L%204.609%207.067%20C%203.042%206.923%201.905%206.57%201.198%206.007%20C%200.502%205.433%200.154%204.655%200.154%203.672%20C%200.154%202.883%200.379%202.217%200.83%201.674%20C%201.29%201.121%201.936%200.707%202.765%200.43%20C%203.605%200.143%204.588%200%205.715%200%20C%206.811%200%207.784%200.158%208.633%200.476%20C%209.483%200.783%2010.16%201.224%2010.661%201.797%20C%2011.163%202.36%2011.44%203.021%2011.491%203.779%20L%208.403%203.779%20C%208.362%203.492%208.224%203.246%207.988%203.042%20C%207.763%202.827%207.451%202.662%207.051%202.55%20C%206.662%202.427%206.196%202.366%205.653%202.366%20C%204.906%202.366%204.311%202.468%203.871%202.673%20Q%203.226%202.979%203.226%203.549%20C%203.226%203.835%203.354%204.066%203.61%204.24%20Q%203.994%204.486%205.008%204.609%20L%207.343%204.839%20C%208.429%204.951%209.294%205.136%209.939%205.392%20C%2010.595%205.638%2011.066%205.981%2011.353%206.421%20C%2011.64%206.851%2011.783%207.394%2011.783%208.05%20C%2011.783%208.838%2011.542%209.535%2011.061%2010.139%20C%2010.59%2010.733%209.924%2011.194%209.064%2011.521%20C%208.203%2011.849%207.195%2012.013%206.037%2012.013%20C%204.86%2012.013%203.82%2011.849%202.919%2011.521%20C%202.028%2011.184%201.326%2010.712%200.814%2010.108%20C%200.31%209.514%200.023%208.767%200%207.988%20L%203.103%207.988%20Z%20M%2020.856%207.051%20L%2018.892%202.556%20L%2016.928%207.051%20L%2020.856%207.051%20Z%20M%2064.696%207.051%20L%2062.731%202.556%20L%2060.767%207.051%20L%2064.696%207.051%20Z%22%20style%3D%22fill%3A%20rgb(47%2C%2022%2C%202)%20!important%3B%22%2F%3E%3C%2Fsvg%3E",
+      "favicon": "https://www.sanna.no/icon-light.png",
+      "ogImage": "https://www.sanna.no/og.jpg",
+      "logoHref": "#top",
+      "logoAlt": "Sanna"
+    },
+    "personality": {
+      "tone": "professional",
+      "energy": "low",
+      "targetAudience": "small businesses"
+    },
+    "designSystem": {
+      "framework": "tailwind",
+      "componentLibrary": "shadcn"
+    },
+    "confidence": {
+      "buttons": 0.75,
+      "colors": 0.8233333333333334,
+      "overall": 0.7866666666666666
+    },
+    "brandName": "Sanna",
+    "logo": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2270%22%20height%3D%2212%22%20viewBox%3D%220%200%2069.998%2012.013%22%20aria-label%3D%22Sanna%22%20data-fc-idx%3D%220%22%3E%3Cpath%20fill%3D%22currentColor%22%20d%3D%22M%2051.551%208.329%20L%2051.551%200.246%20L%2054.501%200.246%20L%2054.501%2011.767%20L%2050.676%2011.767%20L%2044.777%203.482%20L%2044.777%2011.767%20L%2041.827%2011.767%20L%2041.827%200.246%20L%2045.775%200.246%20L%2051.551%208.329%20Z%20M%2036.853%208.331%20L%2036.853%200.246%20L%2039.802%200.246%20L%2039.802%2011.767%20L%2035.977%2011.767%20L%2030.078%203.482%20L%2030.078%2011.767%20L%2027.129%2011.767%20L%2027.129%200.246%20L%2031.077%200.246%20L%2036.853%208.331%20Z%20M%2026.158%2011.767%20L%2022.917%2011.767%20L%2021.924%209.494%20L%2015.861%209.494%20L%2014.868%2011.767%20L%2011.626%2011.767%20L%2016.895%200.246%20L%2020.874%200.246%20L%2026.158%2011.767%20Z%20M%2069.998%2011.767%20L%2066.756%2011.767%20L%2065.763%209.494%20L%2059.7%209.494%20L%2058.707%2011.767%20L%2055.465%2011.767%20L%2060.735%200.246%20L%2064.713%200.246%20L%2069.998%2011.767%20Z%20M%203.103%207.988%20C%203.154%208.326%203.303%208.623%203.549%208.879%20C%203.804%209.125%204.148%209.314%204.578%209.448%20C%205.008%209.581%205.515%209.647%206.099%209.647%20C%206.908%209.647%207.548%209.54%208.019%209.325%20C%208.49%209.11%208.726%208.797%208.726%208.388%20C%208.726%208.08%208.587%207.839%208.311%207.666%20C%208.044%207.491%207.538%207.363%206.79%207.282%20L%204.609%207.067%20C%203.042%206.923%201.905%206.57%201.198%206.007%20C%200.502%205.433%200.154%204.655%200.154%203.672%20C%200.154%202.883%200.379%202.217%200.83%201.674%20C%201.29%201.121%201.936%200.707%202.765%200.43%20C%203.605%200.143%204.588%200%205.715%200%20C%206.811%200%207.784%200.158%208.633%200.476%20C%209.483%200.783%2010.16%201.224%2010.661%201.797%20C%2011.163%202.36%2011.44%203.021%2011.491%203.779%20L%208.403%203.779%20C%208.362%203.492%208.224%203.246%207.988%203.042%20C%207.763%202.827%207.451%202.662%207.051%202.55%20C%206.662%202.427%206.196%202.366%205.653%202.366%20C%204.906%202.366%204.311%202.468%203.871%202.673%20Q%203.226%202.979%203.226%203.549%20C%203.226%203.835%203.354%204.066%203.61%204.24%20Q%203.994%204.486%205.008%204.609%20L%207.343%204.839%20C%208.429%204.951%209.294%205.136%209.939%205.392%20C%2010.595%205.638%2011.066%205.981%2011.353%206.421%20C%2011.64%206.851%2011.783%207.394%2011.783%208.05%20C%2011.783%208.838%2011.542%209.535%2011.061%2010.139%20C%2010.59%2010.733%209.924%2011.194%209.064%2011.521%20C%208.203%2011.849%207.195%2012.013%206.037%2012.013%20C%204.86%2012.013%203.82%2011.849%202.919%2011.521%20C%202.028%2011.184%201.326%2010.712%200.814%2010.108%20C%200.31%209.514%200.023%208.767%200%207.988%20L%203.103%207.988%20Z%20M%2020.856%207.051%20L%2018.892%202.556%20L%2016.928%207.051%20L%2020.856%207.051%20Z%20M%2064.696%207.051%20L%2062.731%202.556%20L%2060.767%207.051%20L%2064.696%207.051%20Z%22%20style%3D%22fill%3A%20rgb(47%2C%2022%2C%202)%20!important%3B%22%2F%3E%3C%2Fsvg%3E"
+  }
+}
