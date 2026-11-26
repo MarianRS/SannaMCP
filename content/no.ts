@@ -10,9 +10,9 @@ import en, { CONNECTOR_NAME, MCP_URL } from "./en";
  */
 const no: Content = {
   meta: {
-    title: "Sanna MCP · Dokumentasjon",
+    title: "Sanna MCP | Koble Claude til Sanna OpCo MCP",
     description:
-      "Slik kobler du Sanna MCP til AI-assistenten din — i dag Claude — for å svare regnskapsføreren, stille et spørsmål, sende kvitteringer og filer, og registrere utlegg.",
+      "Slik kobler du Sanna MCP til Claude for å svare regnskapsføreren, stille et spørsmål, sende kvitteringer og filer, og registrere utlegg.",
     htmlLang: "nb",
   },
   ui: {
@@ -60,9 +60,9 @@ const no: Content = {
     },
   ],
   hero: {
-    title: ["Bruk Sanna fra ", "AI-assistenten din", "."],
-    lead: "Sanna MCP kobler Sanna-kontoen din til en AI-assistent. Når den er koblet til, kan den lese og svare på spørsmål fra regnskapsføreren din, stille et spørsmål, sende kvitteringer og andre filer, og registrere utlegg for deg.",
-    clientsLabel: "Støttede assistenter",
+    title: ["Koble ", "Claude", " til Sanna OpCo MCP"],
+    lead: "Sanna MCP kobler Sanna-kontoen din til Claude. Den fungerer bare med Claude. Når den er koblet til, kan Claude lese og svare på spørsmål fra regnskapsføreren din, stille et spørsmål, sende kvitteringer og andre filer, og registrere utlegg for deg.",
+    clientsLabel: "Fungerer med",
     connectLabel: "Sett opp",
     capabilitiesLabel: "Dette kan du gjøre",
     capabilities: [

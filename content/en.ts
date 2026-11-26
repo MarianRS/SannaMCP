@@ -5,9 +5,9 @@ export const CONNECTOR_NAME = "Sanna MCP";
 
 const en: Content = {
   meta: {
-    title: "Sanna MCP · Docs",
+    title: "Sanna MCP | Connect Claude to Sanna OpCo MCP",
     description:
-      "How Sanna customers connect Sanna MCP to their AI assistant — today Claude — to answer their accountant, ask a question, send receipts and files, and register expenses.",
+      "How Sanna customers connect Sanna MCP to Claude to answer their accountant, ask a question, send receipts and files, and register expenses.",
     htmlLang: "en",
   },
   ui: {
@@ -55,9 +55,9 @@ const en: Content = {
     },
   ],
   hero: {
-    title: ["Use Sanna from ", "your AI assistant", "."],
-    lead: "Sanna MCP connects your Sanna account to an AI assistant. Once connected, it can read and answer questions from your accountant, ask a question, send receipts and other files, and register expenses for you.",
-    clientsLabel: "Supported assistants",
+    title: ["Connect ", "Claude", " to Sanna OpCo MCP"],
+    lead: "Sanna MCP connects your Sanna account to Claude. It works only with Claude. Once connected, Claude can read and answer questions from your accountant, ask a question, send receipts and other files, and register expenses for you.",
+    clientsLabel: "Works with",
     connectLabel: "Set up",
     capabilitiesLabel: "What you can do",
     capabilities: [
@@ -122,8 +122,8 @@ const en: Content = {
         image: {
           src: "/images/kb-opco-mcp-custom-connector.png",
           alt: "Claude's Add custom connector dialog with the name Sanna MCP and the URL https://opco.sanna.co/api/mcp filled in.",
-          width: 1062,
-          height: 828,
+          width: 2080,
+          height: 1622,
           caption: "The Add custom connector dialog in Claude.",
         },
       },
@@ -133,8 +133,8 @@ const en: Content = {
         image: {
           src: "/images/kb-opco-mcp-custom-connector-auth.png",
           alt: "The authentication settings in Claude, with Sign in now and Use Claude's published identity selected and marked Detected.",
-          width: 1080,
-          height: 1834,
+          width: 1490,
+          height: 2576,
           caption: "Leave both detected options selected and add no headers.",
         },
       },

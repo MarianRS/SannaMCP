@@ -16,6 +16,8 @@
     --color-orange: var(--orange);
     --color-olive: var(--olive);
     --color-olive-link: var(--olive-link);
+    --color-lime: var(--lime);
+    --color-lime-soft: var(--lime-soft);
     --color-input-bg: var(--input-bg);
     --color-ring: var(--ring);
     --color-input: var(--input);
@@ -69,6 +71,8 @@
     --orange: #FF5A00;
     --olive: #7F7A2E;
     --olive-link: #6F7A12;
+    --lime: #A3AE45;
+    --lime-soft: #E9E8D3;
     --hairline: #E8E2D6;
 
     /* Elevation (better-ui): ring + lift + ambient, no depth-only borders */

@@ -70,7 +70,7 @@ export function Section({
 }) {
   return (
     <section id={id} aria-labelledby={`${id}-title`} className={cn("pt-20 sm:pt-28", className)}>
-      <h2 id={`${id}-title`} className="font-heading text-[2rem] leading-[1.1] font-light tracking-[-0.01em] text-ink-strong sm:text-[2.5rem]">
+      <h2 id={`${id}-title`} className="font-sans text-[1.625rem] leading-[1.2] font-medium tracking-[-0.02em] text-ink-strong sm:text-[1.875rem]">
         {title}
       </h2>
       {lead && (
@@ -158,7 +158,8 @@ export function TopBar({ c, locale }: { c: Content; locale: Locale }) {
     <header className="sticky top-0 z-40 border-b border-border/70 bg-background/80 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-[1120px] items-center justify-between gap-3 px-4 sm:px-6">
         <a href="#introduction" className="flex items-center gap-3 rounded-md focus-visible:ring-3 focus-visible:ring-ring/50 focus-visible:outline-none">
-          <span className="font-heading text-[1.6rem] leading-none tracking-[-0.02em] text-ink-strong">Sanna</span>
+          {/* eslint-disable-next-line @next/next/no-img-element -- static SVG, no optimization needed */}
+          <img src="/sanna-logo.svg" alt="Sanna" width={338} height={80} className="h-6 w-auto" />
           <span aria-hidden className="hidden h-5 w-px bg-border sm:block" />
           <span className="hidden text-sm text-muted-foreground sm:inline">{c.ui.docsLabel}</span>
         </a>
@@ -183,8 +184,8 @@ export function TopBar({ c, locale }: { c: Content; locale: Locale }) {
 export function Footer({ c }: { c: Content }) {
   return (
     <footer className="mt-28 px-2 pb-2">
-      <div className="relative overflow-hidden rounded-[20px] bg-slab">
-        <div className="mx-auto flex max-w-[1120px] flex-col gap-4 px-4 pt-10 pb-28 sm:flex-row sm:items-start sm:justify-between sm:px-6 sm:pb-40">
+      <div className="rounded-[20px] bg-slab">
+        <div className="mx-auto flex max-w-[1120px] flex-col gap-4 px-4 pt-10 pb-16 sm:flex-row sm:items-start sm:justify-between sm:px-6">
           <p className="max-w-[40ch] text-sm text-muted-foreground">{c.ui.footerNote}</p>
           <a
             href="#introduction"
@@ -194,12 +195,10 @@ export function Footer({ c }: { c: Content }) {
             {c.ui.backToTop}
           </a>
         </div>
-        <p
-          aria-hidden
-          className="pointer-events-none absolute inset-x-0 -bottom-[0.22em] text-center font-heading text-[28vw] leading-none tracking-[-0.04em] text-transparent select-none [-webkit-text-stroke:1px_rgba(47,22,2,0.12)] lg:text-[22rem]"
-        >
-          SANNA
-        </p>
+        <div className="mx-auto max-w-[1120px] px-4 pb-10 sm:px-6">
+          {/* eslint-disable-next-line @next/next/no-img-element -- static SVG, no optimization needed */}
+          <img src="/sanna-logo.svg" alt="Sanna" width={338} height={80} className="h-8 w-auto" />
+        </div>
       </div>
     </footer>
   );
@@ -273,8 +272,8 @@ export function BeforeYouStart({ c }: { c: Content }) {
       <ul className="flex flex-col gap-3">
         {b.requirements.map((req) => (
           <li key={req} className="flex gap-3 text-[15px] leading-relaxed">
-            <span aria-hidden className="mt-[3px] grid size-5 shrink-0 place-items-center rounded-full bg-olive text-white">
-              <CheckIcon className="size-3" {...ICON_MEDIUM} />
+            <span aria-hidden className="mt-[3px] grid size-5 shrink-0 place-items-center rounded-full border-[1.5px] border-lime bg-lime-soft text-lime">
+              <CheckIcon className="size-3" absoluteStrokeWidth strokeWidth={2.25} />
             </span>
             <span>
               <Inline text={req} />
@@ -311,8 +310,9 @@ function StepItem({ client, step, index, isLast, c }: { client: Client; step: St
   const n = String(index + 1).padStart(2, "0");
   return (
     <li id={stepAnchor(client, index)} className="grid grid-cols-[2.75rem_minmax(0,1fr)] gap-x-3 sm:grid-cols-[3.5rem_minmax(0,1fr)] sm:gap-x-4">
-      <div className="flex flex-col items-start">
-        <span className="font-heading text-[1.75rem] leading-none font-light text-olive tabular-nums sm:text-[2rem]">
+      {/* Column hugs the number so the rail centers under it; -ms nudges out the digits' left side bearing. */}
+      <div className="-ms-0.5 flex flex-col items-center justify-self-start">
+        <span className="font-sans text-[1.75rem] leading-none font-medium tracking-[-0.02em] text-orange tabular-nums sm:text-[2rem]">
           <span className="sr-only">
             {c.ui.stepLabel} {index + 1}:
           </span>
